@@ -87,7 +87,9 @@ function buildWhatsApp(planName: string) {
   const msg = encodeURIComponent(
     `Здравствуйте! Меня интересует абонемент «${planName}».`
   );
-  return `https://wa.me/+77479105889?text=${msg}`;
+  // Remove non-digit characters for the link
+  const cleanNumber = WHATSAPP_NUMBER.replace(/\D/g, '');
+  return `https://wa.me/${cleanNumber}?text=${msg}`;
 }
 
 /* ─────────────────────── Bubbles helper ───────────────────── */

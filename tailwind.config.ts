@@ -9,8 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        cinzel: ["Cinzel", "serif"],
-        inter: ["Inter", "sans-serif"],
+        cinzel: ["var(--font-cinzel)", "serif"],
+        inter: ["var(--font-inter)", "sans-serif"],
       },
       colors: {
         navy: {
