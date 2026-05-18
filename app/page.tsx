@@ -11,13 +11,13 @@ const plans = [
     name: "Standard",
     price: "25,000",
     currency: "₸",
-    period: "/ month",
-    description: "Идеальное начало в аква-фитнесе с доступом ко всем стандартным занятиям в бассейне.",
+    period: "/ ай",
+    description: "Бассейндегі барлық стандартты сабақтарға қол жеткізе отырып, аква-фитнестегі тамаша бастама.",
     features: [
-      "8 занятий в бассейне / месяц",
-      "Доступ к раздевалкам",
-      "Оценка физической формы",
-      "Онлайн-запись на занятия",
+      "Айына 8 сабақ бассейнде",
+      "Киім ауыстыратын бөлмелерге кіру",
+      "Дене шынықтыруды бағалау",
+      "Сабақтарға онлайн жазылу",
     ],
     featured: false,
     icon: "💧",
@@ -27,13 +27,13 @@ const plans = [
     name: "Pilates",
     price: "35,000",
     currency: "₸",
-    period: "/ month",
-    description: "Сочетайте аква-пилатес с укреплением мышц кора для гармоничного тела.",
+    period: "/ ай",
+    description: "Үйлесімді дене үшін аква-пилатесті кор бұлшықеттерін қатайтумен біріктіріңіз.",
     features: [
-      "12 занятий аква-пилатесом",
-      "Тренировки на гибкость и кор",
-      "Занятия с инструктором",
-      "Консультация по питанию",
+      "Аква-пилатес бойынша 12 сабақ",
+      "Икемділік пен кор жаттығулары",
+      "Нұсқаушымен сабақтар",
+      "Тамақтану бойынша кеңес",
     ],
     featured: false,
     icon: "🌊",
@@ -43,13 +43,13 @@ const plans = [
     name: "Surf",
     price: "45,000",
     currency: "₸",
-    period: "/ month",
-    description: "Энергичная симуляция сёрфинга и тренировки с сопротивлением волны.",
+    period: "/ ай",
+    description: "Серфингтің жігерлі симуляциясы және толқынға қарсыласу жаттығулары.",
     features: [
-      "Безлимитные сёрф-занятия",
-      "Тренировки с сопротивлением волн",
-      "Персональный тренер (2×/нед)",
-      "Приоритетный доступ к дорожке",
+      "Шексіз серф-сабақтар",
+      "Толқынға қарсыласу жаттығулары",
+      "Жеке жаттықтырушы (аптасына 2 рет)",
+      "Жолға басымдықпен кіру",
     ],
     featured: true,
     icon: "🏄",
@@ -59,13 +59,13 @@ const plans = [
     name: "Premium",
     price: "55,000",
     currency: "₸",
-    period: "/ month",
-    description: "Максимальный комплексный опыт аква-велнеса — всё включено.",
+    period: "/ ай",
+    description: "Аква-велнестің максималды кешенді тәжірибесі — барлығы қосылған.",
     features: [
-      "Безлимитный доступ ко всем классам",
-      "Ежедневный персональный тренер",
-      "Доступ в спа и сауну",
-      "Эксклюзивная зона для членов клуба",
+      "Барлық сыныптарға шексіз кіру",
+      "Күнделікті жеке жаттықтырушы",
+      "Спа мен саунаға кіру",
+      "Клуб мүшелеріне арналған эксклюзивті аймақ",
     ],
     featured: false,
     icon: "👑",
@@ -73,19 +73,19 @@ const plans = [
 ];
 
 const schedule = [
-  { time: "07:00 – 08:00", mon: "Аква Кардио",  tue: "—",           wed: "Аква Кардио",  thu: "—",           fri: "Аква Кардио",  sat: "Открытый бассейн",   sun: "—"         },
-  { time: "09:00 – 10:00", mon: "Аква Пилатес", tue: "Аква Пилатес",wed: "—",            thu: "Аква Пилатес", fri: "—",            sat: "Аква Пилатес",sun: "Открытый бассейн" },
-  { time: "10:30 – 11:30", mon: "—",            tue: "Сёрф Фит",    wed: "Сёрф Фит",     thu: "—",           fri: "Сёрф Фит",     sat: "Сёрф Фит",    sun: "—"         },
-  { time: "12:00 – 13:00", mon: "Стретч & Флоу",tue: "—",          wed: "Стретч & Флоу",thu: "Стретч & Флоу",fri: "—",         sat: "—",           sun: "Йога на воде"},
-  { time: "18:00 – 19:00", mon: "Аква Кардио",  tue: "Аква Пилатес",wed: "Аква Кардио",  thu: "Сёрф Фит",    fri: "Аква Кардио",  sat: "—",           sun: "—"         },
-  { time: "19:30 – 20:30", mon: "Сёрф Фит",     tue: "Стретч & Флоу",wed: "Аква Пилатес",thu: "Аква Кардио", fri: "Сёрф Фит",    sat: "—",           sun: "—"         },
+  { time: "07:00 – 08:00", mon: "Аква Кардио",  tue: "—",           wed: "Аква Кардио",  thu: "—",           fri: "Аква Кардио",  sat: "Ашық бассейн",   sun: "—"         },
+  { time: "09:00 – 10:00", mon: "Аква Пилатес", tue: "Аква Пилатес",wed: "—",            thu: "Аква Пилатес", fri: "—",            sat: "Аква Пилатес",sun: "Ашық бассейн" },
+  { time: "10:30 – 11:30", mon: "—",            tue: "Серф Фит",    wed: "Серф Фит",     thu: "—",           fri: "Серф Фит",     sat: "Серф Фит",    sun: "—"         },
+  { time: "12:00 – 13:00", mon: "Стретч & Флоу",tue: "—",          wed: "Стретч & Флоу",thu: "Стретч & Флоу",fri: "—",         sat: "—",           sun: "Судағы йога"},
+  { time: "18:00 – 19:00", mon: "Аква Кардио",  tue: "Аква Пилатес",wed: "Аква Кардио",  thu: "Серф Фит",    fri: "Аква Кардио",  sat: "—",           sun: "—"         },
+  { time: "19:30 – 20:30", mon: "Серф Фит",     tue: "Стретч & Флоу",wed: "Аква Пилатес",thu: "Аква Кардио", fri: "Серф Фит",    sat: "—",           sun: "—"         },
 ];
 
-const days = ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"];
+const days = ["Дс", "Сс", "Ср", "Бс", "Жм", "Сн", "Жк"];
 
 function buildWhatsApp(planName: string) {
   const msg = encodeURIComponent(
-    `Здравствуйте! Меня интересует абонемент «${planName}».`
+    `Сәлеметсіз бе! Мені «${planName}» абонементі қызықтырады.`
   );
   // Remove non-digit characters for the link
   const cleanNumber = WHATSAPP_NUMBER.replace(/\D/g, '');
@@ -153,7 +153,7 @@ export default function Home() {
             AQUAFIT
           </span>
           <div className="hidden md:flex items-center gap-8">
-            {([["О нас", "about"], ["Цены", "pricing"], ["Расписание", "schedule"]] as [string, string][]).map(([label, anchor]) => (
+            {([["Біз туралы", "about"], ["Бағалар", "pricing"], ["Кесте", "schedule"]] as [string, string][]).map(([label, anchor]) => (
               <a key={anchor} href={`#${anchor}`} className="nav-link">
                 {label}
               </a>
@@ -164,7 +164,7 @@ export default function Home() {
             id="nav-join-btn"
             className="btn-whatsapp px-5 py-2 rounded-full text-sm hidden md:block"
           >
-            Вступить
+            Қосылу
           </a>
         </div>
       </nav>
@@ -187,7 +187,7 @@ export default function Home() {
         <div className="relative z-10 px-6 max-w-5xl mx-auto">
           {/* eyebrow */}
           <p className="font-inter text-xs tracking-[0.35em] uppercase text-[#48cae4] mb-6 opacity-80">
-            Премиальный Аква-Велнес · Казахстан
+            Премиум Аква-Велнес · Қазақстан
           </p>
 
           {/* main title */}
@@ -200,8 +200,8 @@ export default function Home() {
           {/* sub */}
           <p className="font-inter text-base sm:text-lg md:text-xl font-light max-w-2xl mx-auto mb-10"
             style={{ color: "rgba(202,240,248,0.7)" }}>
-            Погрузитесь в самый передовой опыт аква-фитнеса.
-            Там, где результат встречается с гармонией — глубоко под водой.
+            Аква-фитнестің ең озық тәжірибесіне еніңіз.
+            Нәтиже үйлесімділікпен кездесетін жер - судың тереңінде.
           </p>
 
           {/* CTA row */}
@@ -211,7 +211,7 @@ export default function Home() {
               id="hero-explore-btn"
               className="btn-whatsapp px-8 py-4 rounded-full text-sm font-semibold tracking-wider"
             >
-              Смотреть абонементы
+              Абонементтерді көру
             </a>
             <a
               href="#about"
@@ -222,14 +222,14 @@ export default function Home() {
                 color: "#90e0ef",
               }}
             >
-              Узнать больше
+              Толығырақ білу
             </a>
           </div>
 
           {/* scroll hint */}
           <div className="mt-20 flex flex-col items-center gap-2 opacity-40">
             <span className="font-inter text-xs tracking-widest uppercase" style={{ color: "#90e0ef" }}>
-              Листайте
+              Аударыңыз
             </span>
             <div className="w-px h-12 bg-gradient-to-b from-[#00b4d8] to-transparent" />
           </div>
@@ -246,26 +246,20 @@ export default function Home() {
             <div>
               <p className="font-inter text-xs tracking-[0.3em] uppercase mb-4"
                 style={{ color: "#48cae4" }}>
-                Наша философия
+                Біздің философиямыз
               </p>
               <h2 className="font-cinzel text-4xl md:text-5xl font-bold mb-6 leading-tight"
                 style={{ color: "#caf0f8" }}>
-                Где вода становится<br />
-              вашим убежищем
+                Су сіздің панаңызға<br />
+              айналатын жер
               </h2>
               <p className="font-inter text-base leading-relaxed mb-4"
                 style={{ color: "rgba(202,240,248,0.65)" }}>
-                AquaFit Wellness Club переосмысляет понятие тренировки. Основанные на науке
-              гидротерапии и акватической биомеханики, наши программы созданы для
-              максимального результата при минимальной нагрузке на суставы —
-              каждое занятие одновременно восстанавливает и укрепляет.
+                AquaFit Wellness Club жаттығу ұғымын қайта қарайды. Гидротерапия және су биомеханикасы ғылымына негізделген біздің бағдарламалар буындарға ең аз күш түсіре отырып, максималды нәтижеге жету үшін жасалған — әр сабақ бір уақытта қалпына келтіреді және нығайтады.
               </p>
               <p className="font-inter text-base leading-relaxed"
                 style={{ color: "rgba(202,240,248,0.65)" }}>
-                От медитативного потока Аква-Пилатеса до захватывающего сопротивления
-              Сёрф-Фита — наши сертифицированные тренеры ведут вас по пути,
-              который создан только для вас. Это не просто спортзал —
-              это опыт, созданный для тех, кто требует совершенства.
+                Аква-Пилатестің медитативті ағымынан Серф-Фиттің қызықты қарсыласуына дейін — біздің сертификатталған жаттықтырушыларымыз сізді тек сіз үшін жасалған жолмен жүргізеді. Бұл жай ғана спорт залы емес — бұл кемелдікті талап ететіндер үшін жасалған тәжірибе.
               </p>
             </div>
 
@@ -273,10 +267,10 @@ export default function Home() {
             <div className="glass rounded-2xl p-8 fade-in-up">
               <div className="grid grid-cols-2 gap-6">
                 {[
-                  { value: "4+", label: "Уникальные программы" },
-                  { value: "500+", label: "Активных участников" },
-                  { value: "12", label: "Экспертных тренеров" },
-                  { value: "5★", label: "Рейтинг участников" },
+                  { value: "4+", label: "Бірегей бағдарламалар" },
+                  { value: "500+", label: "Белсенді қатысушылар" },
+                  { value: "12", label: "Сарапшы жаттықтырушылар" },
+                  { value: "5★", label: "Қатысушылар рейтингі" },
                 ].map((stat) => (
                   <div key={stat.label} className="text-center p-4 rounded-xl"
                     style={{ background: "rgba(0,53,102,0.3)", border: "1px solid rgba(0,180,216,0.12)" }}>
@@ -295,7 +289,7 @@ export default function Home() {
               <div className="mt-6 pt-6 border-t" style={{ borderColor: "rgba(0,180,216,0.12)" }}>
                 <p className="font-inter text-sm text-center italic"
                   style={{ color: "rgba(202,240,248,0.5)" }}>
-                  «Вода знает ваши пределы — мы помогаем их превзойти.»
+                  «Су сіздің шектеулеріңізді біледі — біз олардан асып түсуге көмектесеміз.»
                 </p>
               </div>
             </div>
@@ -312,16 +306,16 @@ export default function Home() {
           <div className="text-center mb-16 fade-in-up">
             <p className="font-inter text-xs tracking-[0.3em] uppercase mb-4"
               style={{ color: "#48cae4" }}>
-              Абонементы
+              Абонементтер
             </p>
             <h2 className="font-cinzel text-4xl md:text-5xl font-bold mb-4"
               style={{ color: "#caf0f8" }}>
-              Выберите свой путь
+              Өз жолыңызды таңдаңыз
             </h2>
             <p className="font-inter text-base max-w-xl mx-auto"
               style={{ color: "rgba(202,240,248,0.55)" }}>
-              Каждый абонемент открывает доступ к нашим первоклассным объектам.
-              Выберите план, соответствующий вашим целям.
+              Әрбір абонемент біздің бірінші дәрежелі нысандарға қол жеткізуді ашады.
+              Мақсаттарыңызға сәйкес келетін жоспарды таңдаңыз.
             </p>
           </div>
 
@@ -335,7 +329,7 @@ export default function Home() {
                 {plan.featured && (
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2">
                     <span className="badge-popular text-white px-4 py-1 rounded-full font-inter font-semibold">
-                      Самый популярный
+                      Ең танымал
                     </span>
                   </div>
                 )}
@@ -388,7 +382,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="btn-whatsapp w-full py-3 rounded-xl text-sm text-center block"
                 >
-                  Купить абонемент
+                  Абонемент сатып алу
                 </a>
               </div>
             ))}
@@ -402,16 +396,16 @@ export default function Home() {
           <div className="text-center mb-16 fade-in-up">
             <p className="font-inter text-xs tracking-[0.3em] uppercase mb-4"
               style={{ color: "#48cae4" }}>
-              Еженедельное расписание
+              Апталық кесте
             </p>
             <h2 className="font-cinzel text-4xl md:text-5xl font-bold mb-4"
               style={{ color: "#caf0f8" }}>
-              Расписание занятий
+              Сабақ кестесі
             </h2>
             <p className="font-inter text-base max-w-xl mx-auto"
               style={{ color: "rgba(202,240,248,0.55)" }}>
-              Планируйте неделю с нашим расписанием занятий. Все сессии
-              доступны для онлайн-записи через личный кабинет.
+              Аптаңызды біздің сабақ кестесімен жоспарлаңыз. Барлық сессиялар
+              жеке кабинет арқылы онлайн жазылуға қолжетімді.
             </p>
           </div>
 
@@ -422,7 +416,7 @@ export default function Home() {
                 <thead>
                   <tr>
                     <th className="py-4 px-6 font-cinzel text-sm tracking-wider" style={{ color: "#90e0ef" }}>
-                      Время
+                      Уақыт
                     </th>
                     {days.map((d) => (
                       <th key={d} className="py-4 px-4 font-inter text-xs tracking-widest uppercase"
@@ -488,7 +482,7 @@ export default function Home() {
 
           {/* legend */}
           <div className="mt-8 flex flex-wrap gap-4 justify-center fade-in-up">
-            {["Аква Кардио", "Аква Пилатес", "Сёрф Фит", "Стретч & Флоу", "Йога на воде", "Открытый бассейн"].map((cls) => (
+            {["Аква Кардио", "Аква Пилатес", "Серф Фит", "Стретч & Флоу", "Судағы йога", "Ашық бассейн"].map((cls) => (
               <span key={cls} className="font-inter text-xs px-3 py-1.5 rounded-full"
                 style={{
                   background: "rgba(0,53,102,0.4)",
@@ -510,12 +504,12 @@ export default function Home() {
               AQUAFIT
             </p>
             <p className="font-inter text-xs" style={{ color: "rgba(202,240,248,0.35)" }}>
-              Велнес-клуб · Казахстан
+              Велнес-клуб · Қазақстан
             </p>
           </div>
 
           <div className="flex gap-6">
-            {([["О нас", "about"], ["Цены", "pricing"], ["Расписание", "schedule"]] as [string, string][]).map(([label, anchor]) => (
+            {([["Біз туралы", "about"], ["Бағалар", "pricing"], ["Кесте", "schedule"]] as [string, string][]).map(([label, anchor]) => (
               <a key={anchor} href={`#${anchor}`}
                 className="font-inter text-xs tracking-wider uppercase nav-link">
                 {label}
@@ -533,14 +527,14 @@ export default function Home() {
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
               <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
             </svg>
-            Написать в WhatsApp
+            WhatsApp-қа жазу
           </a>
         </div>
 
         <div className="divider w-full max-w-xs mt-8 mb-6 mx-auto" />
 
         <p className="font-inter text-center text-xs" style={{ color: "rgba(202,240,248,0.2)" }}>
-          © {new Date().getFullYear()} AquaFit Wellness Club. Все права защищены.
+          © {new Date().getFullYear()} AquaFit Wellness Club. Барлық құқықтар қорғалған.
         </p>
       </footer>
     </div>
